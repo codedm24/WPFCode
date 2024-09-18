@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPFSampleQuoteServerClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSampleQuoteServerClient"
+        mc:Ignorable="d"
+        Title="Quote Server Client" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="buttonGetQuote" Margin="3" VerticalAlignment="Stretch" Content="Get Quote" Grid.Row="0" IsEnabled="{Binding EnableRequest, Mode=OneWay}" ClickMode="Press" Click="buttonGetQuote_Click"/>
+        <TextBlock x:Name="textBlockQuote" Margin="6" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Quote, Mode=OneWay}"/>
+        <!--<StackPanel>
+            <Button Margin="6" Click="buttonGetQuote_Click1" VerticalAlignment="Top" ClickMode="Press">Get Content</Button>
+            <TextBlock Margin="6" TextWrapping="Wrap"/>
+        </StackPanel>-->
+    </Grid>
+</Window>

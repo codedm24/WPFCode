@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ConsoleAppSampleQuoteServerLibTest/1.0.0": {
+        "dependencies": {
+          "SampleQuoteServerLib": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleAppSampleQuoteServerLibTest.dll": {}
+        }
+      },
+      "SampleQuoteServerLib/1.0.0": {
+        "runtime": {
+          "SampleQuoteServerLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleAppSampleQuoteServerLibTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SampleQuoteServerLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

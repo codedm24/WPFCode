@@ -1,0 +1,7 @@
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerLib\bin\Debug\SampleQuoteServerLib.dll
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerLib\bin\Debug\SampleQuoteServerLib.pdb
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerLib\obj\Debug\SampleQuoteServerLib.csproj.AssemblyReference.cache
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerLib\obj\Debug\SampleQuoteServerLib.csproj.CoreCompileInputs.cache
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerLib\obj\Debug\SampleQuoteServerLib.dll
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerLib\obj\Debug\SampleQuoteServerLib.pdb
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerLib\bin\Debug\quotes.txt

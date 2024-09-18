@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleQuoteServerLib", "SampleQuoteServerLib\SampleQuoteServerLib.csproj", "{ACA412F6-B513-4529-AE80-2C3F70D6D482}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppSampleQuoteServerLibTest", "ConsoleAppSampleQuoteServerLibTest\ConsoleAppSampleQuoteServerLibTest.csproj", "{FC4F50BC-75F3-4E6B-A874-26EE4049A357}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFSampleQuoteServerClient", "WPFSampleQuoteServerClient\WPFSampleQuoteServerClient.csproj", "{E99A513F-74B8-4C36-ABCA-49B316BA75AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleQuoteServerService", "SampleQuoteServerService\SampleQuoteServerService.csproj", "{2CD2F909-C859-4A4C-B851-BB72B3731B8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSampleQuoteServerController", "WPFSampleQuoteServerController\WPFSampleQuoteServerController.csproj", "{475EB4D7-731C-4920-93FB-A763628CA404}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACA412F6-B513-4529-AE80-2C3F70D6D482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA412F6-B513-4529-AE80-2C3F70D6D482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA412F6-B513-4529-AE80-2C3F70D6D482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA412F6-B513-4529-AE80-2C3F70D6D482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC4F50BC-75F3-4E6B-A874-26EE4049A357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4F50BC-75F3-4E6B-A874-26EE4049A357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4F50BC-75F3-4E6B-A874-26EE4049A357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4F50BC-75F3-4E6B-A874-26EE4049A357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99A513F-74B8-4C36-ABCA-49B316BA75AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99A513F-74B8-4C36-ABCA-49B316BA75AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99A513F-74B8-4C36-ABCA-49B316BA75AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99A513F-74B8-4C36-ABCA-49B316BA75AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD2F909-C859-4A4C-B851-BB72B3731B8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD2F909-C859-4A4C-B851-BB72B3731B8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD2F909-C859-4A4C-B851-BB72B3731B8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD2F909-C859-4A4C-B851-BB72B3731B8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{475EB4D7-731C-4920-93FB-A763628CA404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{475EB4D7-731C-4920-93FB-A763628CA404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{475EB4D7-731C-4920-93FB-A763628CA404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{475EB4D7-731C-4920-93FB-A763628CA404}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A13179C-4173-4EF9-B7E8-80FB0B361269}
+	EndGlobalSection
+EndGlobal

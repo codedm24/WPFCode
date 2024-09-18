@@ -1,0 +1,14 @@
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\obj\Debug\SampleQuoteServerService.csproj.AssemblyReference.cache
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\obj\Debug\SampleQuoteServerService.SampleQuoteService.resources
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\obj\Debug\SampleQuoteServerService.csproj.GenerateResource.cache
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\obj\Debug\SampleQuoteServerService.csproj.CoreCompileInputs.cache
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\bin\Debug\SampleQuoteServerService.exe.config
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\bin\Debug\SampleQuoteServerService.exe
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\bin\Debug\SampleQuoteServerService.pdb
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\bin\Debug\SampleQuoteServerLib.dll
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\bin\Debug\SampleQuoteServerLib.pdb
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\obj\Debug\SampleQuoteServerService.ProjectInstaller.resources
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\obj\Debug\SampleQu.3D57B527.Up2Date
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\obj\Debug\SampleQuoteServerService.exe
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\obj\Debug\SampleQuoteServerService.pdb
+F:\Projects\Windows\WindowsService\SampleQuoteServerLib\SampleQuoteServerService\bin\Debug\quotes.txt
