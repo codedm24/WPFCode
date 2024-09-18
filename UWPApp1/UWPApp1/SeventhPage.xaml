@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="UWPApp1.SeventhPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPApp1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="180" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Compiled Binding" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Button x:Name="buttonNavNext" Content="Next" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Click="{x:Bind buttonNavNext_Click}"/>
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <TextBlock Text="{x:Bind Book.Title, Mode=OneWay}" />
+            <TextBlock Text="{x:Bind Book.Publisher}" />
+        </StackPanel>
+
+        <CommandBar Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+            <AppBarButton IsCompact="False" Icon="Stop" Label="Stop Tracking" Click="{x:Bind OnStopTracking}"/>
+            <AppBarButton IsCompact="False" Icon="Edit" Label="Change Book" Click="{x:Bind OnChangeBook}"/>
+            <AppBarButton IsCompact="False" Icon="Refresh" Label="Update Binding" Click="{x:Bind OnUpdateBinding}"/>
+        </CommandBar>
+    </Grid>
+</Page>

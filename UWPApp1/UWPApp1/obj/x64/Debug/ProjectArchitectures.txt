@@ -1,0 +1,1 @@
+F:\Projects\Windows\UWPApp1\UWPApp1\UWPApp1.csproj;x64

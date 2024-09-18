@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="UWPApp1.SixthPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPApp1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.TopAppBar>
+        <CommandBar>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="One" Icon="OneBar" />
+                <AppBarButton Label="Two" Icon="TwoBars" />
+                <AppBarButton Label="Three" Icon="ThreeBars"/>
+                <AppBarButton Label="Four" Icon="FourBars"/>
+            </CommandBar.SecondaryCommands>
+            <!--<CommandBar.Content>
+                <TextBlock Text="Commands" HorizontalAlignment="Center"/>
+            </CommandBar.Content>-->
+            <AppBarElementContainer>
+                <TextBlock Text="Commands"/>
+            </AppBarElementContainer>
+            <AppBarToggleButton IsChecked="{x:Bind Path=ColorSelection1.Red, Mode=TwoWay}"
+                                Background="Red" Label="Red">
+                <AppBarToggleButton.Icon>
+                    <FontIcon Glyph="&#xea3a;"/>
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+            <AppBarToggleButton IsChecked="{x:Bind Path=ColorSelection1.Green, Mode=TwoWay}"
+                                Background="Green" Label="Green" IsCompact="True" Tag="Green">
+                <AppBarToggleButton.Icon>
+                    <FontIcon Glyph="&#xea3a;" />
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+            <AppBarToggleButton IsChecked="{x:Bind Path=ColorSelection1.Blue, Mode=TwoWay}"
+                                Background="Blue" Label="Blue" IsCompact="True" Tag="Blue">
+                <AppBarToggleButton.Icon>
+                    <FontIcon Glyph="&#xea3a;"/>
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+            <AppBarButton Icon="Save" Label="Save" Click="{x:Bind OnSave}"/>
+            <AppBarButton Icon="OpenFile" Label="Open" Click="{x:Bind OnLoad}"/>
+            <AppBarButton Icon="Clear" Label="Clear" Click="{x:Bind OnClear}"/>
+            <AppBarButton Icon="Next" Label="Next" Click="AppBarButtonNext_Click"/>
+        </CommandBar>
+    </Page.TopAppBar>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid x:DeferLoadStrategy="Lazy" x:Name="deferGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Rectangle Fill="Red" Grid.Row="0" Grid.Column="0"/>
+            <Rectangle Fill="Green" Grid.Row="0" Grid.Column="1"/>
+            <Rectangle Fill="Blue" Grid.Row="1" Grid.Column="0"/>
+            <Rectangle Fill="Yellow" Grid.Row="1" Grid.Column="1"/>
+        </Grid>
+        <InkCanvas x:Name="inkCanvas"/>
+    </Grid>
+</Page>
