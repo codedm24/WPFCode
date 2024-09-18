@@ -1,0 +1,23 @@
+﻿<ResourceDictionary x:Class="RoomReservationClientWPF.Styles.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoomReservationClientWPF.Styles"
+                    xmlns:model="clr-namespace:RoomReservationClientWPF.RoomReservationService"
+        mc:Ignorable="d">
+    <DataTemplate x:Key="RoomReservationTemplate" DataType="model:RoomReservation">
+        <StackPanel Orientation="Horizontal" Width="700">
+            <TextBlock Text="StartDate" Width="70" Background="AliceBlue" TextAlignment="Center" />
+            <TextBlock Text="{Binding StartDate.Date, StringFormat=dd-MM-yyyy}" Background="AntiqueWhite" Width="Auto" TextAlignment="Center" />
+            <TextBlock Text="EndDate"  Width="70" Background="AliceBlue" TextAlignment="Center" />
+            <TextBlock Text="{Binding EndDate.Date, StringFormat=dd-MM-yyyy}" Background="AntiqueWhite"  Width="Auto" TextAlignment="Center" />
+            <TextBlock Text="Contact" Width="60" Background="AliceBlue" TextAlignment="Center" />
+            <TextBlock Text="{Binding Contact}"  Width="Auto" Background="AntiqueWhite" TextAlignment="Center" />
+            <TextBlock Text="Event"  Width="50" Background="AliceBlue" TextAlignment="Center" />
+            <TextBlock Text="{Binding Event}"  Width="Auto" Background="AntiqueWhite" TextAlignment="Center" />
+            <TextBlock Text="RoomName"  Width="80" Background="AliceBlue" TextAlignment="Center" />
+            <TextBlock Text="{Binding RoomName}"  Width="Auto" Background="AntiqueWhite" TextAlignment="Center" />
+        </StackPanel>
+    </DataTemplate>
+</ResourceDictionary>

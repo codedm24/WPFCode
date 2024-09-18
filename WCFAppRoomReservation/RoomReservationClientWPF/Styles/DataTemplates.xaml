@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:model="using:RoomReservationClientWPF.RoomReservationService">
+    <DataTemplate x:Key="RoomReservationTemplate" DataType="model:RoomReservation" >
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding RoomName}"/>
+        </StackPanel>
+    </DataTemplate>
+</ResourceDictionary>

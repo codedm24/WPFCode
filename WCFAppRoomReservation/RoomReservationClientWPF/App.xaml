@@ -1,0 +1,12 @@
+﻿<Application x:Class="RoomReservationClientWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:RoomReservationClientWPF"
+             xmlns:styles="clr-namespace:RoomReservationClientWPF.Styles"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--<ResourceDictionary Source="Styles/DataTemplates.xaml"/>-->
+        <!--<ResourceDictionary Source="Styles/Dictionary1.xaml"/>-->
+        <styles:Window1/>
+    </Application.Resources>
+</Application>

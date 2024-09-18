@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RoomReservationsModel1StoreContainer" CdmEntityContainer="RoomReservationsEntities1">
+    <EntitySetMapping Name="RoomReservations">
+      <EntityTypeMapping TypeName="RoomReservationsModel1.RoomReservation">
+        <MappingFragment StoreEntitySet="RoomReservations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="RoomName" ColumnName="RoomName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
