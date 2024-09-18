@@ -1,0 +1,13 @@
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\UWPApp3MarkupExtension.csproj.AssemblyReference.cache
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\App.g.i.cs
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\App.g.cs
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\MainPage.g.i.cs
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\MainPage.g.cs
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\XamlTypeInfo.g.cs
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\App.xaml
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\MainPage.xaml
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\App.xbf
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\MainPage.xbf
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\XamlSaveStateFile.xml
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\UWPApp3.exe
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\obj\x64\Debug\UWPApp3.pdb

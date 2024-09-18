@@ -1,0 +1,7 @@
+F:\Projects\Windows\ConsoleAppXAML\ConsoleAppXAML\bin\Debug\ConsoleAppXAML.exe.config
+F:\Projects\Windows\ConsoleAppXAML\ConsoleAppXAML\bin\Debug\ConsoleAppXAML.exe
+F:\Projects\Windows\ConsoleAppXAML\ConsoleAppXAML\bin\Debug\ConsoleAppXAML.pdb
+F:\Projects\Windows\ConsoleAppXAML\ConsoleAppXAML\obj\Debug\ConsoleAppXAML.csproj.AssemblyReference.cache
+F:\Projects\Windows\ConsoleAppXAML\ConsoleAppXAML\obj\Debug\ConsoleAppXAML.csproj.CoreCompileInputs.cache
+F:\Projects\Windows\ConsoleAppXAML\ConsoleAppXAML\obj\Debug\ConsoleAppXAML.exe
+F:\Projects\Windows\ConsoleAppXAML\ConsoleAppXAML\obj\Debug\ConsoleAppXAML.pdb

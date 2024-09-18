@@ -1,0 +1,1 @@
+F:\Projects\Windows\ConsoleAppXAML\UWPApp3\UWPApp3.csproj;x64
