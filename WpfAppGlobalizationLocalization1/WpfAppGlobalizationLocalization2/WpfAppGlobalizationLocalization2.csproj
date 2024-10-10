@@ -1,0 +1,84 @@
+﻿  <Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Resources\**" />
+  </ItemGroup>
+    
+    <PropertyGroup>
+      <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+    </PropertyGroup>
+  <!--<ItemGroup>
+    <Compile Remove="Resource1.Designer.cs" />
+    <Compile Remove="Resources\Messages.Designer.cs" />
+  </ItemGroup>-->
+
+  <!--<ItemGroup>
+    <EmbeddedResource Remove="Resource1.resx" />
+    <EmbeddedResource Remove="WpfAppGlobalizationLocalization2.MyResources.resx" />
+  </ItemGroup>-->
+
+  <!--<ItemGroup>
+    <None Remove="WpfAppGlobalizationLocalization2.MyResources.resources" />
+    <None Remove="WpfAppGlobalizationLocalization2.MyResources.txt" />
+  </ItemGroup>-->
+
+  <!--<ItemGroup>
+    <EmbeddedResource Remove="Resources\Messages.fr.resx" />
+    <EmbeddedResource Remove="Resources\Messages.resx" />
+    <EmbeddedResource Remove="resx\Messages.fr.resx" />
+    <EmbeddedResource Remove="resx\Messages.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="resx\Messages.fr.resources" />
+    <None Remove="resx\Messages.resources" />
+  </ItemGroup>-->
+
+  <!--<ItemGroup>
+    <EmbeddedResource Include="resx\Messages.fr.resources" />
+  </ItemGroup>-->
+
+  <!--<ItemGroup>
+    <None Include="Resources\Messages.fr.resx" />
+    <None Include="Resources\Messages.resx" />
+    <None Include="resx\Messages.fr.resx" />
+    <None Include="resx\Messages.resx" />
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <None Update="Resources\Messages.fr.resources">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Messages.resources">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="WpfAppGlobalizationLocalization2.MyResources.resources">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>-->
+    <!--<ItemGroup>
+    <None Update="Resources\Messages.fr.resources">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Messages.resources">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="WpfAppGlobalizationLocalization2.MyResources.resources">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>-->
+
+</Project>

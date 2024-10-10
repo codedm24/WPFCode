@@ -1,0 +1,4 @@
+Title = Professional C#
+Chapter = Localization
+Author = Christian Nagel
+Publisher = Wrox Press

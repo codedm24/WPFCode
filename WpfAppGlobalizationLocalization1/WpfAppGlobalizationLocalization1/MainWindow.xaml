@@ -1,0 +1,120 @@
+﻿<Window x:Class="WpfAppGlobalizationLocalization1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppGlobalizationLocalization1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVisibility"/>
+        <local:CalendarTypeToCalendarInformationConverter x:Key="calendarConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" Name="Col1"/>
+            <ColumnDefinition Width="*" Name="Col2"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" x:Name="MainRow1"/>
+        </Grid.RowDefinitions>
+        <TreeView Grid.Row="0" Grid.Column="0" Name="Treeview1" SelectedItemChanged="Treeview1_SelectedItemChanged" ItemsSource="{Binding}">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type local:CultureData}" ItemsSource="{Binding SubCultures}">
+                    <TextBlock Text="{Binding Path=CultureInfo.EnglishName}"/>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+        <Grid x:Name="itemGrid" Margin="8" Grid.Row="0" Grid.Column="1" Width="Auto" Height="Auto" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" Name="Col11" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250" x:Name="Row1"/>
+                <RowDefinition Height="*" x:Name="Row2"/>
+                <RowDefinition Height="*" x:Name="Row3"/>
+            </Grid.RowDefinitions>
+            <GroupBox x:Name="GroupBoxCultureInfo" Width="Auto" Grid.Row="0" Grid.Column="0">
+                <GroupBox.Header>
+                    <TextBlock x:Name="TextBlockCultureInfoHeader" Text="Culture Information"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120" x:Name="Column11"/>
+                        <ColumnDefinition Width="*" x:Name="Column12"/>
+                        <ColumnDefinition Width="97" x:Name="Column13"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" x:Name="Row11"/>
+                        <RowDefinition Height="*" x:Name="Row12"/>
+                        <RowDefinition Height="*" x:Name="Row13"/>
+                        <RowDefinition Height="*" x:Name="Row14"/>
+                        <RowDefinition Height="*" x:Name="Row15"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Culture Name:" Name="TextLabelCultureName" Grid.Row="0" Grid.Column="0" Margin="8"/>
+                    <TextBlock x:Name="TextCultureName" Grid.Row="0" Grid.Column="1" Margin="8" Text="{Binding CultureInfo.Name}"/>
+                    <TextBlock x:Name="TextNeurtalCulture" Grid.Row="0" Grid.Column="2" Margin="8" Text="Neutral Culture"
+                               Visibility="{Binding CultureInfo.IsNeutralCulture, Converter={StaticResource boolToVisibility}}"/>
+                    <TextBlock x:Name="TextLabelEnglishName" Text="English Name:" Grid.Row="1" Grid.Column="0" Margin="8"/>
+                    <TextBlock x:Name="TextEnglishName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="8" Width="Auto" Text="{Binding CultureInfo.EnglishName}"/>
+                    <TextBlock x:Name="TextLabelNativeName" Text="Native Name:" Grid.Row="2" Grid.Column="0" Margin="8"/>
+                    <TextBlock x:Name="TextNativeName" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="8" Width="Auto" Text="{Binding CultureInfo.NativeName}"/>
+                    <TextBlock x:Name="TextLabelDefaultCalendar" Text="Default Calendar:" Grid.Row="3" Grid.Column="0" Margin="8"/>
+                    <TextBlock x:Name="TextDefaultCalendar" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="8" Width="Auto" Text="{Binding CultureInfo.Calendar, Converter={StaticResource calendarConverter}}"/>
+                    <TextBlock x:Name="TextLabelOptionalCalendar" Text="Optional Calendar:" Grid.Row="4" Grid.Column="0" Margin="8"/>
+                    <ListBox x:Name="LixtBoxOptionalCalendar" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="8" Width="Auto" ItemsSource="{Binding CultureInfo.OptionalCalendars}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Converter={StaticResource calendarConverter}}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="GroupBoxSamples" Width="Auto" Grid.Row="1" Grid.Column="0" >
+                <GroupBox.Header>
+                    <TextBlock Text="Samples" Name="TextBlockSampleHeader"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" x:Name="Column21"/>
+                        <ColumnDefinition Width="*" x:Name="Column22"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" x:Name="Row21"/>
+                        <RowDefinition Height="*" x:Name="Row22"/>
+                        <RowDefinition Height="*" x:Name="Row23"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="TextLabelNumber" Text="Number" Margin="8" Grid.Row="0" Grid.Column="0"/>
+                    <TextBlock x:Name="TextNumber" Margin="8" Width="Auto" Grid.Row="0" Grid.Column="1" Text="{Binding NumberSample}" />
+                    <TextBlock x:Name="TextLabelFullDate" Text="Full Date" Margin="8" Grid.Row="1" Grid.Column="0"/>
+                    <TextBlock x:Name="TextFullDate" Margin="8" Width="Auto" Grid.Row="1" Grid.Column="1" Text="{Binding DateSample}"/>
+                    <TextBlock x:Name="TextLabelTime" Text="Time" Margin="8" Grid.Row="2" Grid.Column="0"/>
+                    <TextBlock x:Name="TextTime" Margin="8" Width="Auto" Grid.Row="2" Grid.Column="1" Text="{Binding TimeSample}"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="GroupBoxRegionInformation" Width="Auto" Grid.Row="2" Grid.Column="0">
+                <GroupBox.Header>
+                    <TextBlock Text="Region Information" Name="TextBlockRegionInformation"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" x:Name="Column31"/>
+                        <ColumnDefinition Width="*" x:Name="Column32"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" x:Name="Row31"/>
+                        <RowDefinition Height="*" x:Name="Row32"/>
+                        <RowDefinition Height="*" x:Name="Row33"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock x:Name="TextLabelRegion" Text="Region" Margin="8" Grid.Row="0" Grid.Column="0"/>
+                    <TextBlock x:Name="TextRegion" Margin="8" Width="Auto" Grid.Row="0" Grid.Column="1" Text="{Binding RegionInfo.DisplayName}" />
+                    <TextBlock x:Name="TextLabelCurrency" Text="Currency" Margin="8" Grid.Row="1" Grid.Column="0"/>
+                    <TextBlock x:Name="TextCurrency" Margin="8" Width="Auto" Grid.Row="1" Grid.Column="1" Text="{Binding RegionInfo.CurrencySymbol}"/>
+                    <TextBlock x:Name="TextLabelIsMetric" Text="Is Metric" Margin="8" Grid.Row="2" Grid.Column="0"/>
+                    <TextBlock x:Name="TextIsMetric" Margin="8" Width="Auto" Grid.Row="2" Grid.Column="1" Text="{Binding RegionInfo.ISOCurrencySymbol}"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</Window>
