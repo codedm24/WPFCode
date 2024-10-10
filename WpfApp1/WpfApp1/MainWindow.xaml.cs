@@ -20,5 +20,26 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void OnClear(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void OnSearchSync(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void OnSearchAsyncPattern(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void OnAsyncEventPattern(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void OnTaskBasedAsyncPattern(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
