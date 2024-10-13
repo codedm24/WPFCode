@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\Windows\\WPFCode\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
-      "projectName": "WpfApp1",
-      "projectPath": "F:\\Projects\\Windows\\WPFCode\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+      "projectUniqueName": "F:\\Projects\\Windows\\WPFCode\\WpfAppTaskAsyncParallelCheck\\WpfAppTaskAsyncParallelCheck\\WpfAppTaskAsyncParallelCheck.csproj",
+      "projectName": "WpfAppTaskAsyncParallelCheck",
+      "projectPath": "F:\\Projects\\Windows\\WPFCode\\WpfAppTaskAsyncParallelCheck\\WpfAppTaskAsyncParallelCheck\\WpfAppTaskAsyncParallelCheck.csproj",
       "packagesPath": "D:\\.nuget",
-      "outputPath": "F:\\Projects\\Windows\\WPFCode\\WpfApp1\\WpfApp1\\obj\\",
+      "outputPath": "F:\\Projects\\Windows\\WPFCode\\WpfAppTaskAsyncParallelCheck\\WpfAppTaskAsyncParallelCheck\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "F:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
