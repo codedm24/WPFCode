@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp_Window_Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_Window_Demo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="Window_Closing" 
+        MinWidth="300" MaxWidth="800" MinHeight="300" MaxHeight="500" WindowState="Maximized" ResizeMode="CanResizeWithGrip" WindowStyle="SingleBorderWindow">
+    <!-- it hides the menu-->
+    <!--MinWidth="300" MaxWidth="800" MinHeight="300" MaxHeight="500" SizeToContent="WidthAndHeight">-->
+    <Grid>
+        <StackPanel>
+            <Menu>
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Exit" Click="ExitMenuItem_Click"/>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <StackPanel>
+            <TextBox x:Name="documentTextBox" Width="400" Height="300" Background="AliceBlue" TextChanged="documentTextBox_TextChanged"/>
+            <Button x:Name="OpenCustomBorderWindow" Content="Open Custom Border Window" Height="60" Width="200" Click="OpenCustomBorderWindow_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
