@@ -6,8 +6,11 @@
         xmlns:local="clr-namespace:WpfAppConceptCheck"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <!--<Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>-->
     <Grid Background="AliceBlue">
-        <StackPanel Orientation="Horizontal" Margin="10">
+        <WrapPanel Orientation="Horizontal" Margin="10">
             <Button Content="Press me" Width="100" Height="50" Margin="20" Click="Button_Click" SnapsToDevicePixels="True" MouseDown="Button_MouseDown" MouseUp="Button_MouseUp">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -79,7 +82,10 @@
                 </Button.Triggers>
             </Button>
 
-        </StackPanel>
+            <Label Content="{Binding LabelText}" FontSize="16" Width="100" Height="50" Margin="20" />
+            <Button Content="Change Text" Command="{Binding ChangeTextCommand}" Width="100" Height="30" Margin="20" />
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Background="RosyBrown" Height="300" Width="800"/>
+        </WrapPanel>
         
     </Grid>
 </Window>

@@ -21,17 +21,14 @@ namespace WpfAppConceptCheck
     /// </summary>
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
-        private string _userInput;
-        public string UserInput { get => _userInput; set  
-                { 
-                _userInput = value; OnPropertyChanged("UserInput"); 
-            } 
-        }
+       
 
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = this;
+            //DataContext = this;
+            DataContext = new MainViewModel();
+            MainFrame.Navigate(new Page1());
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
