@@ -6,10 +6,25 @@
       xmlns:local="clr-namespace:WpfAppConceptCheck"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Page2">
+      Title="Page2" Loaded="Page_Loaded">
 
-    <Grid>
-        <TextBlock Text="Welcome to Page 2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
-        <Button Content="Go to Page 1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NavigateToPage1_Click"/>
+    <Grid x:Name="Grid1" Background="{DynamicResource DynamicBrush}" MouseUp="Grid1_MouseUp" PreviewMouseDown="Grid1_PreviewMouseDown">
+        <StackPanel MouseUp="StackPanel_MouseUp" PreviewMouseDown="StackPanel_PreviewMouseDown">
+            <TextBlock Text="Welcome to Page 2" x:Name="textBoxColored" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Background="{DynamicResource DynamicBrush}"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Change Color" Margin="20" x:Name="btnChangeColor" HorizontalAlignment="Center" VerticalAlignment="Center"  Click="ChangeColor_Click"/>
+                <Button Content="Go to Page 1" Margin="20" x:Name="btnNavigate1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NavigateToPage1_Click"/>
+                <Button Content="Go to Page 3" Margin="20" x:Name="btnNavigate2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="btnNavigate2_Click"/>
+            </StackPanel>
+            
+            <Label Content="Bubbling event" x:Name="bubbleEvent" Width="328" MouseUp="bubbleEvent_MouseUp" PreviewMouseDown="bubbleEvent_PreviewMouseDown" Loaded="bubbleEvent_Loaded"/>
+            <ListView Height="196" x:Name="listView1" Width="476">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
     </Grid>
 </Page>

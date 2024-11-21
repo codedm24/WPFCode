@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:WpfAppConceptCheck"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+         <SolidColorBrush x:Key="StaticBrush" Color="LightBlue"/>
+        <SolidColorBrush x:Key="DynamicBrush" Color="LightCoral"/>
+        <local:BoolToBrushConverter x:Key="BoolToBrushConverter"/>
     </Application.Resources>
 </Application>
