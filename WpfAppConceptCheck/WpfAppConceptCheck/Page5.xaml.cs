@@ -15,27 +15,14 @@ using System.Windows.Shapes;
 
 namespace WpfAppConceptCheck
 {
-    public class Person
-    {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string City { get; set; }
-    }
-
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for Page5.xaml
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Page5 : Page
     {
-        public Page1()
+        public Page5()
         {
             InitializeComponent();
-            DataContext = new PersonViewModel();
-        }
-
-        private void NavigateToPage2_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Page2());
         }
     }
 }

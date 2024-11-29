@@ -16,29 +16,27 @@ using System.Windows.Shapes;
 namespace WpfAppConceptCheck
 {
     /// <summary>
-    /// Interaction logic for Page3.xaml
+    /// Interaction logic for Page4.xaml
     /// </summary>
-    public partial class Page3 : Page
+    public partial class Page4 : Page
     {
-        public Page3()
+        public Page4()
         {
             InitializeComponent();
-            this.DataContext = new MainViewModel();
-        }
 
-        private void btnChangeColor_Click(object sender, RoutedEventArgs e)
-        {
-            textBlockChangeColor.Background = checkbox1.IsChecked.Value ? Brushes.LightCoral : Brushes.LightGreen;
+            List<Person> people = new List<Person> { 
+                new Person { Name = "Alice", Age = 30, City = "New York" }, 
+                new Person { Name = "Bob", Age = 25, City = "San Francisco" }, 
+                new Person { Name = "Charlie", Age = 35, City = "Chicago" } 
+            }; 
+            PersonListBox.ItemsSource = people;
         }
 
         private void NavigateToPage1_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Page2());
-        }
-
-        private void btnNavigate2_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Page4());
+            NavigationService.Navigate(new Page3());
         }
     }
+
+
 }

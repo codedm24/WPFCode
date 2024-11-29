@@ -11,11 +11,17 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="textBlockChangeColor" Text="Converter example" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"
+        <TextBlock x:Name="textBlockChangeColor" Text="Converter example" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"
                        Background="{Binding IsBackgroundGreen, Converter={StaticResource BoolToBrushConverter}, Mode=TwoWay}"/>
-        <StackPanel Orientation="Horizontal" Background="Azure" Width="700" Height="100" Grid.Row="0">
+        <StackPanel Orientation="Horizontal" Background="Azure" Width="700" Height="100" Grid.Row="0" HorizontalAlignment="Center">
+            <Button Content="Go to Page 2" Margin="20" x:Name="btnNavigate1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NavigateToPage1_Click"/>
+            <Button Content="Go to Page 4" Margin="20" x:Name="btnNavigate2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="btnNavigate2_Click"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Background="Azure" Width="700" Height="100" Grid.Row="1">
             <CheckBox x:Name="checkbox1" Content="Change Background" IsChecked="{Binding IsBackgroundGreen, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20"/>
             <Button x:Name="btnChangeColor" Content="Change Color" Click="btnChangeColor_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20"/>
         </StackPanel>

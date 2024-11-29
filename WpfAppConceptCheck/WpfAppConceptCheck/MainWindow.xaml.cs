@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,12 @@ namespace WpfAppConceptCheck
             //DataContext = this;
             DataContext = new MainViewModel();
             MainFrame.Navigate(new Page1());
+
+            int renderCapabilityTier = RenderCapability.Tier;
+            labelGpu.Content ="GPU tier: "+ renderCapabilityTier;
         }
+
+        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -48,6 +54,34 @@ namespace WpfAppConceptCheck
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName) { 
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("Window loaded");
+        }
+
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Window Activated");
+        }
+
+        private void Window_Deactivated(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Window Deactivated");
+        }
+
+        private void Window_Unloaded(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("Window unloaded");
+        }
+
+        private void btnSampleDialog_Click(object sender, RoutedEventArgs e)
+        {
+            WindowSampleDialog windSampleDialog = new WindowSampleDialog();
+            Application.Current.MainWindow = windSampleDialog;
+            Application.Current.MainWindow.Show();
+            this.Close();
         }
     }
 }
