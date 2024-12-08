@@ -11,6 +11,7 @@
     <Grid>
         <DockPanel>
             <Button Content="Go to Page 3" Margin="20" x:Name="btnNavigate1" HorizontalAlignment="Center" VerticalAlignment="Top" DockPanel.Dock="Top" Click="NavigateToPage1_Click"/>
+            <Button Content="Go to Page 5" Margin="20" x:Name="btnNavigate2" HorizontalAlignment="Center" VerticalAlignment="Top" DockPanel.Dock="Top" Click="NavigateToPage2_Click"/>
             <ListBox Name="PersonListBox" Margin="20" DockPanel.Dock="Bottom">
                 <ListBox.ItemTemplate>
                     <DataTemplate>

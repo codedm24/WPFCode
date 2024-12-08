@@ -6,9 +6,16 @@
       xmlns:local="clr-namespace:WpfAppConceptCheck"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"      
-      Title="Page5">
-
+      Title="Template Intro">
     <Grid>
-        
+        <StackPanel Margin="10">
+            <TextBlock Style="{StaticResource TitleText}" Name="textblock1">My Pictures</TextBlock>
+            <TextBlock>Check out my new pictures!</TextBlock>
+            <TextBlock x:Name="textBlock2" Style="{StaticResource ResourceKey=Header1}">Date:</TextBlock>
+            <Label>Unstyled Button</Label>
+            <Button>Button 1</Button>
+            <Label>Rounded Button</Label>
+            <Button Template="{StaticResource roundButton}" Height="65" Width="65">Button 2</Button>
+        </StackPanel>
     </Grid>
 </Page>

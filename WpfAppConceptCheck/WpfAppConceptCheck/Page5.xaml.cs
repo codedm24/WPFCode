@@ -23,6 +23,8 @@ namespace WpfAppConceptCheck
         public Page5()
         {
             InitializeComponent();
+            textBlock2.Style = (Style)Resources["Header1"];
+            textBlock2.Text = System.DateTime.Now.ToShortDateString();
         }
     }
 }

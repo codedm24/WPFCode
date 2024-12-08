@@ -4,8 +4,70 @@
              xmlns:local="clr-namespace:WpfAppConceptCheck"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         <SolidColorBrush x:Key="StaticBrush" Color="LightBlue"/>
-        <SolidColorBrush x:Key="DynamicBrush" Color="LightCoral"/>
-        <local:BoolToBrushConverter x:Key="BoolToBrushConverter"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <SolidColorBrush x:Key="StaticBrush" Color="LightBlue"/>
+            <SolidColorBrush x:Key="DynamicBrush" Color="LightCoral"/>
+            <local:BoolToBrushConverter x:Key="BoolToBrushConverter"/>
+            <Style TargetType="TextBlock">
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value="Comic Sans MS"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+            <Style BasedOn="{StaticResource {x:Type TextBlock}}"
+               TargetType="TextBlock" x:Key="TitleText">
+                <Setter Property="FontSize" Value="26"/>
+                <Setter Property="Foreground">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Offset="0.0" Color="#90DDDD"/>
+                                <GradientStop Offset="1.0" Color="#5BFFFF"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <ControlTemplate x:Key="roundButton" TargetType="Button">
+                <Grid>
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <Storyboard>
+                                    <ColorAnimation Storyboard.TargetName="backgroundElement"
+                                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+                                                    To="{TemplateBinding Background}"
+                                                    Duration="0:0:0:3"/>
+                                </Storyboard>
+                            </VisualState>
+                            <VisualState x:Name="MouseOver">
+                                <Storyboard>
+                                    <ColorAnimation Storyboard.TargetName="backgroundElement"
+                                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+                                                    To="Yellow"
+                                                    Duration="0:0:0:3"/>
+                                </Storyboard>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                    <Ellipse x:Name="backgroundElement" Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}"/>
+                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+                <!--<ControlTemplate.Triggers>
+                    <Trigger  Property="IsMouseOver" Value="true">
+                        <Setter Property = "Fill" TargetName = "backgroundElement" Value = "AliceBlue"/>
+                    </Trigger>
+                </ControlTemplate.Triggers>-->
+            </ControlTemplate>
+            <!--<Style x:Key="Header1" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="10"/>
+                <Setter Property="FontWeight" Value="ExtraBold"/>
+            </Style>-->
+        </ResourceDictionary>
+
+
+
     </Application.Resources>
 </Application>

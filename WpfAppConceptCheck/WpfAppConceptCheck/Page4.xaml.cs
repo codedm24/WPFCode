@@ -36,6 +36,11 @@ namespace WpfAppConceptCheck
         {
             NavigationService.Navigate(new Page3());
         }
+
+        private void NavigateToPage2_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Page5());
+        }
     }
 
 
