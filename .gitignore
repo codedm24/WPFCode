@@ -2,35 +2,15 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/WpfApp1/.vs/WpfApp1/FileContentIndex
-/WpfApp1/WpfApp1/obj/Debug/net8.0-windows
-/WpfApp1/WpfApp1/obj
-/WpfAppGlobalizationLocalization1/.vs/WpfAppGlobalizationLocalization1/FileContentIndex
-/WpfAppGlobalizationLocalization1/UWPAppGlobalizationLocalization4/obj/x64/Debug
-/WpfAppGlobalizationLocalization1/WpfAppGlobalizationLocalization1/obj/Debug/net8.0-windows
-/WpfAppGlobalizationLocalization1/WpfAppGlobalizationLocalization2/obj/Debug/net8.0
-/WpfAppGlobalizationLocalization1/WpfAppGlobalizationLocalization3/obj/Debug/net8.0-windows
-/WpfApp1/.vs
-/WpfAppTaskAsyncParallelCheck/.vs
-/WpfAppTaskAsyncParallelCheck/WpfAppTaskAsyncParallelCheck/bin/Debug/net8.0-windows
-/WpfAppTaskAsyncParallelCheck/WpfAppTaskAsyncParallelCheck/obj/Debug/net8.0-windows
-/ConsoleAppXAML/ClassLibrary1/obj/Release/netstandard2.0
-/ConsoleAppXAML/ClassLibrary3/obj/Release
-/WpfAppConceptCheck/.vs/WpfAppConceptCheck
-/WpfAppConceptCheck/WpfAppConceptCheck/bin/Debug
-/WpfAppConceptCheck/WpfAppConceptCheck/obj/Debug
-/WpfAppTaskAsyncParallelCheck/WpfAppTaskAsyncParallelCheck/obj/Release/net8.0-windows
-/WpfAppMSLRNN22/.vs
-/WpfAppMSLRNN22/WpfAppMSLRNN22/bin/Debug
-/WpfAppMSLRNN22/WpfAppMSLRNN22/obj
-/WpfAppGlobalizationLocalization1/.vs
-/WpfAppGlobalizationLocalization1/UWPAppGlobalizationLocalization4/obj
-/WpfAppGlobalizationLocalization1/WpfAppGlobalizationLocalization1/obj/Release/net8.0-windows
-/WpfAppGlobalizationLocalization1/WpfAppGlobalizationLocalization2/obj/Release/net8.0
-/WpfAppGlobalizationLocalization1/WpfAppGlobalizationLocalization3/obj/Release/net8.0-windows
-/WpfApp-Window-Demo/.vs/WpfApp-Window-Demo
-/WpfApp-Window-Demo/WpfApp-Window-Demo/bin/Debug/net8.0-windows
-/WpfApp-Window-Demo/WpfApp-Window-Demo/obj/Debug/net8.0-windows
-/WpfApp-Window-Demo/WpfApp-Window-Demo/obj
-/WpfAppConceptCheck/WpfAppConceptCheck/.vs
-/WpfAppConceptCheck/WpfAppConceptCheck/obj/Release
+# Ignore .vs and obj folders
+.vs/
+obj/
+bin/
+
+# Ignore other temporary files
+*.user
+*.suo
+*.userosscache
+*.userprefs
+*.tmp
+*.log
