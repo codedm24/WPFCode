@@ -1,2 +1,0 @@
-F:\Projects\Windows\ConsoleAppXAML\ConsoleAppXAMLDataLib1\ConsoleAppXAMLDataLib1.csproj;neutral
-F:\Projects\Windows\ConsoleAppXAML\UWPApp1\UWPApp1.csproj;x64
