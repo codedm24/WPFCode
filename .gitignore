@@ -6,6 +6,8 @@
 .vs/
 obj/
 bin/
+# Ignore bin/Debug folder
+bin\Debug\
 
 # Ignore other temporary files
 *.user
@@ -14,3 +16,4 @@ bin/
 *.userprefs
 *.tmp
 *.log
+*.exe
