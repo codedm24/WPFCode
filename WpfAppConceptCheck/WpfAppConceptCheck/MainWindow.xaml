@@ -22,9 +22,11 @@
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="Violet"/>
+                        <Setter Property="BorderThickness" Value="2,2,2,2"/>
                         <Style.Triggers>
                             <Trigger Property="IsMouseDirectlyOver" Value="True">
                                 <Setter Property="Background" Value="Yellow"/>
+                                <Setter Property="BorderThickness" Value="10,10,10,10"/>
                             </Trigger>
                         </Style.Triggers>
                     </Style>

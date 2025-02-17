@@ -26,5 +26,21 @@ namespace WpfAppConceptCheck
             textBlock2.Style = (Style)Resources["Header1"];
             textBlock2.Text = System.DateTime.Now.ToShortDateString();
         }
+
+        private void btnNavigate1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
+
+        private void btnNavigate2_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Page6());
+        }
+
+        private void YesNoCancelClick(object sender, RoutedEventArgs e)
+        {
+            var button = e.OriginalSource as Button;
+            MessageBox.Show(button?.Content.ToString());
+        }
     }
 }

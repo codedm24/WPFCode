@@ -9,6 +9,17 @@
       Title="Template Intro">
     <Grid>
         <StackPanel Margin="10">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
+                <Button Content="Go to Page 4" Margin="20" x:Name="btnNavigate1" HorizontalAlignment="Center" VerticalAlignment="Top" DockPanel.Dock="Top" Click="btnNavigate1_Click"/>
+                <Button Content="Go to Page 6" Margin="20" x:Name="btnNavigate2" HorizontalAlignment="Center" VerticalAlignment="Top" DockPanel.Dock="Top" Click="btnNavigate2_Click"/>
+            </StackPanel>
+            <Border Height="30" Width="200" BorderBrush="Gray" BorderThickness="1">
+                <StackPanel Background="LightBlue" Orientation="Horizontal" Button.Click="YesNoCancelClick">
+                    <Button Name="YesButton">Yes</Button>
+                    <Button Name="NoButton">No</Button>
+                    <Button Name="CancelButton">Cancel</Button>
+                </StackPanel>
+            </Border>
             <TextBlock Style="{StaticResource TitleText}" Name="textblock1">My Pictures</TextBlock>
             <TextBlock>Check out my new pictures!</TextBlock>
             <TextBlock x:Name="textBlock2" Style="{StaticResource ResourceKey=Header1}">Date:</TextBlock>
