@@ -4,10 +4,10 @@
 
 # Ignore .vs and obj folders
 .vs/
-obj/
-bin/
-# Ignore bin/Debug folder
-bin\Debug\
+**/obj/
+**/bin/
+**/bin/x64/Debug/
+packages/
 
 # Ignore other temporary files
 *.user
@@ -17,3 +17,7 @@ bin\Debug\
 *.tmp
 *.log
 *.exe
+*.pdb
+
+
+
